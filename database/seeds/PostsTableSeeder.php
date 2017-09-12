@@ -14,7 +14,7 @@ class PostsTableSeeder extends Seeder
         if (!$post->exists) {
             $post->fill([
                 'author_id' => 1,
-                'category'  => 6,
+                'category_id'  => 6,
                 'title'     => 'Magento 2 Favorites Extension',
                 'seo_title' => 'Magento2 Favorites Extension',
                 'excerpt'   => 'This is the excerpt for the Lorem Ipsum Post',
@@ -40,7 +40,7 @@ class PostsTableSeeder extends Seeder
         if (!$post->exists) {
             $post->fill([
                 'author_id' => 1,
-                'category'  => 1,
+                'category_id'  => 1,
                 'title'     => 'My Sample Post',
                 'seo_title' => null,
                 'excerpt'   => 'This is the excerpt for the sample Post.',
@@ -66,7 +66,7 @@ class PostsTableSeeder extends Seeder
         if (!$post->exists) {
             $post->fill([
                 'author_id' => 1,
-                'category'  => 2,
+                'category_id'  => 2,
                 'title'     => 'Latest Post',
                 'seo_title' => null,
                 'excerpt'   => 'This is the excerpt for the latest post',
@@ -95,7 +95,7 @@ class PostsTableSeeder extends Seeder
         if (!$post->exists) {
             $post->fill([
                 'author_id' => 1,
-                'category'  => 3,
+                'category_id'  => 3,
                 'title'     => 'Yarr Post',
                 'seo_title' => null,
                 'excerpt'   => 'Reef sails nipperkin bring a spring upon her cable coffer jury mast spike marooned Pieces of Eight poop deck pillage. Clipper driver coxswain galleon hempen halter come about pressgang gangplank boatswain swing the lead. Nipperkin yard skysail swab lanyard Blimey bilge water ho quarter Buccaneer.',
@@ -123,7 +123,7 @@ class PostsTableSeeder extends Seeder
         if (!$post->exists) {
             $post->fill([
                 'author_id' => 1,
-                'category'  => 3,
+                'category_id'  => 3,
                 'title'     => 'Who\'s still afraid of Magento 2?',
                 'seo_title' => 'Who\'s still afraid of Magento 2?',
                 'excerpt'   => 'Learning Magento 2 through Test Driven development of Favorites extension.',
@@ -149,7 +149,7 @@ class PostsTableSeeder extends Seeder
         if (!$post->exists) {
             $post->fill([
                 'author_id' => 1,
-                'category'  => 3,
+                'category_id'  => 3,
                 'title'     => 'My Sample Post 2',
                 'seo_title' => 'My Sample Post 2',
                 'excerpt'   => 'This is the excerpt for the sample Post.',
@@ -175,7 +175,7 @@ class PostsTableSeeder extends Seeder
         if (!$post->exists) {
             $post->fill([
                 'author_id' => 1,
-                'category'  => 3,
+                'category_id'  => 3,
                 'title'     => 'Latest Post 2',
                 'seo_title' => null,
                 'excerpt'   => 'This is the excerpt for the latest post 2',
