@@ -1,0 +1,22 @@
+.w3-row a {
+    text-decoration: none;
+    padding: 12px;
+   /* color: #FFAC3A;*/
+    color: #03A9F4;
+    font-size: 1em;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.w3-row img {
+    height: 100px;
+    max-width: 190px;
+}
+.card {
+    min-width: 220px !important;
+    transition: .15s all ease-in-out;
+}
+.card:hover{
+  transform:scale(1.2);
+
+}

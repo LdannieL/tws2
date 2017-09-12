@@ -1,0 +1,16 @@
+<?php
+
+namespace App;
+
+use Illuminate\Database\Eloquent\Model;
+use Illuminate\Support\Facades\Auth;
+use TCG\Voyager\Facades\Voyager;
+
+class MyMenu extends TCG\Voyager\Models\Menu
+{
+    public function parent_items()
+    {
+        return $this->hasMany(Voyager::modelClass('MenuItem'))->orderBy('order', 'desc')
+            ->whereNull('parent_id');
+    }
+}

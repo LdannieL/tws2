@@ -1,0 +1,35 @@
+@extends('layouts.main')
+
+@section('content')
+{{-- <div id="app"> --}}
+    <div class="single-left">
+        <div class="single-left1">
+   {{--          <div class="w3-row center"> --}}
+          {{--       @if ($posts->count()) --}}
+{{--                     @foreach ($posts as $post)
+                        <div class="w3-card-8 w3-col m3 w3-margin w3-animate-zoom card">
+                            <a href="/post/{{ $post->slug }}" target="_blank">
+                            <img src={{ url("/storage/$post->image") }}/>
+                          {{ $post->title }}</a>
+                        </div>
+                    @endforeach --}}
+               {{--  <div class="w3-row center"> --}}
+               {{-- <search></search> --}}
+               <search :keyword="keyword"></search>
+{{--                   <div class="w3-card-8 w3-col m3 w3-margin w3-animate-zoom card"  v-for="post in filteredList">
+                  @{{ post.title }}
+                      <a v-bind:href="'/post/'+ post.slug" target="_blank">
+                      <img v-bind:src="'/storage/'+ post.image"/>
+                    
+                      </a>
+                  </div> --}}
+              {{--   </div> --}}
+{{--                 @else
+                    <p>Nothing found, please try a different search.</p>
+                @endif --}}
+        {{--     </div> --}}
+        </div>
+    </div>
+{{-- </div> --}}
+{{-- {!! $posts->render() !!} --}}
+@stop

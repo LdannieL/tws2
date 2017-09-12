@@ -1,0 +1,31 @@
+<?php
+
+use Illuminate\Database\Migrations\Migration;
+
+class AddOptNewsletterColumnToUsersTable extends Migration
+{
+    /**
+     * Run the migrations.
+     */
+    public function up()
+    {
+        Schema::table('users', function ($table) {
+            $table->dropColumn('name');
+            $table->string('firstname')->before('email');
+            $table->string('lastname')->before('email');
+        });
+    }
+
+    /**
+     * Reverse the migrations.
+     */
+    public function down()
+    {
+        Schema::table('users', function ($table) {
+            $table->string('name');
+            $table->dropColumn('firstname');
+            $table->dropColumn('lastname');
+
+        });
+    }
+}

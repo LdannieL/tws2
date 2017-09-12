@@ -1,0 +1,18 @@
+@extends('layouts.main')
+
+@section('content')
+	<article>
+        <h2>
+            <a href="#">{!! $post->title !!}</a>
+        </h2>
+        <p class="lead">
+            by <a href="/home">{{ $post->user->name }}</a>
+        </p>
+        <p><span class="glyphicon glyphicon-time"></span> Posted on {{{ date('Y-m-d', strtotime($post->created_at))}}} </p>
+        <hr>
+        <img class="img-responsive" src="{{ url("/storage/$post->image") }}" alt="Image">
+        <hr>
+        <p>{!! $post->body !!}</p>
+        <a class="btn btn-primary" href="/"><span class="glyphicon glyphicon-chevron-left"></span> Back</a>
+	</article>
+@stop
