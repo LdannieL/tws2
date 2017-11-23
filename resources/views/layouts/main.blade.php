@@ -20,8 +20,8 @@
 <meta name="msapplication-TileColor" content="#ffffff">
 <meta name="msapplication-TileImage" content="{{ asset('images/favicon/ms-icon-144x144.png') }}">
 <meta name="theme-color" content="#ffffff">
-<title>@if (!empty($posts)) {{ config('app.name', 'Technical Web Services') }} @elseif (!empty($post)) {{ $post->seo_title }} @else {{ config('app.name', 'Technical Web Services') }} @endif</title>    
-<link href="/css/font-awesome.min.css" rel="stylesheet" type="text/css" media="all" /><!-- fontawesome -->     
+<title>@if (!empty($posts)) {{ config('app.name', 'Technical Web Services') }} @elseif (!empty($post)) {{ $post->seo_title }} @else {{ config('app.name', 'Technical Web Services') }} @endif</title>
+<link href="/css/font-awesome.min.css" rel="stylesheet" type="text/css" media="all" /><!-- fontawesome -->
 <link href="/css/bootstrap.min.css" rel="stylesheet" type="text/css" media="all" /><!-- Bootstrap stylesheet -->
 <link href="/css/style.css" rel="stylesheet" type="text/css" media="all" />
 <link rel="stylesheet" href="/css/flexslider.css" type="text/css" media="screen" property="" />
@@ -68,20 +68,20 @@
 <script type="text/javascript">
 		jQuery(document).ready(function($){
 			$('#demo1').skdslider({'delay':5000, 'animationSpeed': 2000,'showNextPrev':true,'showPlayButton':true,'autoSlide':true,'animationType':'fading'});
-						
+
 			$('#responsive').change(function(){
 			  $('#responsive_wrapper').width($(this).val());
 			});
-			
+
 		});
-</script>	
-<!-- //main slider-banner --> 
+</script>
+<!-- //main slider-banner -->
 <!-- start-smoth-scrolling -->
 <script type="text/javascript" src="/js/move-top.js"></script>
 <script type="text/javascript" src="/js/easing.js"></script>
 <script type="text/javascript">
 	jQuery(document).ready(function($) {
-		$(".scroll").click(function(event){		
+		$(".scroll").click(function(event){
 			event.preventDefault();
 			$('html,body').animate({scrollTop:$(this.hash).offset().top},1000);
 		});
@@ -92,14 +92,14 @@
 <!-- scriptfor smooth drop down-nav -->
 <script>
 jQuery(document).ready(function(){
-    $(".dropdown").hover(            
+    $(".dropdown").hover(
         function() {
             $('.dropdown-menu', this).stop( true, true ).slideDown("fast");
-            $(this).toggleClass('open');        
+            $(this).toggleClass('open');
         },
         function() {
             $('.dropdown-menu', this).stop( true, true ).slideUp("fast");
-            $(this).toggleClass('open');       
+            $(this).toggleClass('open');
         }
     );
 });
@@ -120,7 +120,11 @@ jQuery(document).ready(function(){
 @include('layouts._partials.sessionmsg')
 @include('layouts._partials.nav')
 @if (Request::is('/'))
+<!-- <div id="responsive" style="overflow:hidden;">
+    <div id="responsive-wrapper"> -->
 	@include('layouts._partials.slider')
+<!--     </div>
+</div> -->
 @else
 	@include('layouts._partials.banner')
 @endif

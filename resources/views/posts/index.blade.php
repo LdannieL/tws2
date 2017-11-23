@@ -1,6 +1,6 @@
 @extends('layouts.main')
 
-@section('content')	
+@section('content')
 	@if ($posts->count())
 		@foreach ($posts as $post)
 			<div class="wthree-top">
@@ -8,6 +8,7 @@
 					{{-- 	{!! link_to_route('post', $post->title, array($post->id)) !!} --}}
 						@if ($post->hasVideo())
 							<video src="{{ url("/storage/$post->video") }}" width="783" height="522" poster="" controls>
+								<video src="{{ url("/storage/$post->video") }}" width="320" height="auto" poster="" controls media="all and (max-width:480px)">
 								<p>If you are reading this, it is because your browser does not support embedded videos.</p>
 							</video>
         @elseif ($post->hasSlider())
@@ -74,11 +75,11 @@
 						<li><a href="#"><i class="fa fa-calendar" aria-hidden="true"></i>{{{ date('Y-m-d', strtotime($post->created_at)) }}}</a></li>
 						<li><a href="#"><i class="fa fa-thumbs-up" aria-hidden="true"></i>201 LIKES</a></li>
 						<li><a href="#"><i class="fa fa-comment" aria-hidden="true"></i>15 COMMENTS</a></li>
-						
+
 					</ul>
 				</div>
 				</div>
-				
+
 				<div class="w3agile-bottom">
 					<div class="col-md-3 w3agile-left">
 						<h5>
@@ -157,11 +158,11 @@
 							<li><a href="#"><i class="fa fa-calendar" aria-hidden="true"></i>FEB 15,2017</a></li>
 							<li><a href="#"><i class="fa fa-thumbs-up" aria-hidden="true"></i>201 LIKES</a></li>
 							<li><a href="#"><i class="fa fa-comment" aria-hidden="true"></i>15 COMMENTS</a></li>
-							
+
 						</ul>
 					</div>
 					</div>
-					
+
 					<div class="w3agile-bottom">
 						<div class="col-md-3 w3agile-left">
 							<h5>Sit amet consectetur</h5>
@@ -185,11 +186,11 @@
 							<li><a href="#"><i class="fa fa-calendar" aria-hidden="true"></i>FEB 15,2017</a></li>
 							<li><a href="#"><i class="fa fa-thumbs-up" aria-hidden="true"></i>201 LIKES</a></li>
 							<li><a href="#"><i class="fa fa-comment" aria-hidden="true"></i>15 COMMENTS</a></li>
-							
+
 						</ul>
 					</div>
 					</div>
-					
+
 					<div class="w3agile-bottom">
 						<div class="col-md-3 w3agile-left">
 							<h5>Sit amet consectetur</h5>
@@ -228,11 +229,11 @@
 							<li><a href="#"><i class="fa fa-calendar" aria-hidden="true"></i>FEB 15,2017</a></li>
 							<li><a href="#"><i class="fa fa-thumbs-up" aria-hidden="true"></i>201 LIKES</a></li>
 							<li><a href="#"><i class="fa fa-comment" aria-hidden="true"></i>15 COMMENTS</a></li>
-							
+
 						</ul>
 					</div>
 					</div>
-					
+
 					<div class="w3agile-bottom">
 						<div class="col-md-3 w3agile-left">
 							<h5>Sit amet consectetur</h5>

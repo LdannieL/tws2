@@ -1,5 +1,5 @@
 	<!-- top-header and slider -->
-	<div class="w3-slider">	
+	<div class="w3-slider">
 	<!-- main-slider -->
 		<ul id="demo1">
 			<li id="slide1">
@@ -39,7 +39,7 @@
 					</a>
 				</div>
 			</li>
-			
+
 		</ul>
 	</div>
 	<!-- //main-slider -->

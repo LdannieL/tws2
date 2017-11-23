@@ -10,9 +10,9 @@
 			</div>
 			<div class="col-md-4 wthree-footer">
 				<h2>TWC Blog</h2>
-				<p>Thoughts on PHP, Magento & Laravel.
-				Step by step guide on finding a solution to the most interesting problems I am coming across during my dev career.
-				A deep dive into Magento&Laravel core, extensions / packages, and technologies.
+				<p>Thoughts on PHP, Magento &amp; Laravel.
+				Step by step guide on finding solutions to the most interesting problems I am coming across during my day to day practice.
+				A deep dive into Magento &amp; Laravel core, extensions/packages, and technologies.
 				</p>
 			</div>
 			<div class="col-md-4 w3-agile">
@@ -45,7 +45,7 @@
 				</ul> --}}
 			</div>
 			<div class="agileinfo">
-				<p>All Rights Reserved&copy; {{ date('Y') }} {{ Voyager::setting('title') }} &middot; Designed by <a href="http://twitter.com/@dannie0la">Dannie L.</a> | <a href="#">Privacy Terms</a></p>
+				<p>All Rights Reserved&copy; {{ date('Y') }} {{ Voyager::setting('title') }} &middot; Design by <a href="http://w3layouts.com/">W3layouts</a> &middot; Developed with <i class="fa fa-heart" aria-hidden="true"></i> by <a href="http://twitter.com/@dannie0la">Dannie L.</a> | <a href="#">Privacy Terms</a></p>
 			</div>
 		</div>
 	</div>
@@ -58,12 +58,12 @@
 				containerID: 'toTop', // fading element id
 				containerHoverID: 'toTopHover', // fading element hover id
 				scrollSpeed: 1200,
-				easingType: 'linear' 
+				easingType: 'linear'
 				};
 			*/
-								
+
 			$().UItoTop({ easingType: 'easeOutQuart' });
-								
+
 			});
 	</script>
 <!-- //here ends scrolling icon -->

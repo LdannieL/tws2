@@ -255,7 +255,7 @@ class MenuItemsTableSeeder extends Seeder
                     'target'     => '_self',
                     'icon_class' => '',
                     'color'      => '#000000',
-                    'parent_id'  => 17,
+                    'parent_id'  => 15,
                     'order'      => 2,
                 ])->save();
             }
@@ -270,7 +270,7 @@ class MenuItemsTableSeeder extends Seeder
                     'target'     => '_self',
                     'icon_class' => '',
                     'color'      => '#000000',
-                    'parent_id'  => 17,
+                    'parent_id'  => 15,
                     'order'      => 1,
                 ])->save();
             }

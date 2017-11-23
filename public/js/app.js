@@ -34431,7 +34431,7 @@ var Component = __webpack_require__(2)(
   /* cssModules */
   null
 )
-Component.options.__file = "C:\\Apache24\\htdocs\\techwebservices\\resources\\assets\\js\\components\\Comments.vue"
+Component.options.__file = "/Users/dannie/code/tws/resources/assets/js/components/Comments.vue"
 if (Component.esModule && Object.keys(Component.esModule).some(function (key) {return key !== "default" && key !== "__esModule"})) {console.error("named exports are not supported in *.vue files.")}
 if (Component.options.functional) {console.error("[vue-loader] Comments.vue: functional components are not supported with templates, they should use render functions.")}
 
@@ -34442,9 +34442,9 @@ if (false) {(function () {
   if (!hotAPI.compatible) return
   module.hot.accept()
   if (!module.hot.data) {
-    hotAPI.createRecord("data-v-6c925a10", Component.options)
+    hotAPI.createRecord("data-v-5e822a28", Component.options)
   } else {
-    hotAPI.reload("data-v-6c925a10", Component.options)
+    hotAPI.reload("data-v-5e822a28", Component.options)
   }
 })()}
 
@@ -34459,13 +34459,13 @@ var Component = __webpack_require__(2)(
   /* script */
   __webpack_require__(32),
   /* template */
-  __webpack_require__(44),
+  __webpack_require__(42),
   /* scopeId */
   null,
   /* cssModules */
   null
 )
-Component.options.__file = "C:\\Apache24\\htdocs\\techwebservices\\resources\\assets\\js\\components\\Example.vue"
+Component.options.__file = "/Users/dannie/code/tws/resources/assets/js/components/Example.vue"
 if (Component.esModule && Object.keys(Component.esModule).some(function (key) {return key !== "default" && key !== "__esModule"})) {console.error("named exports are not supported in *.vue files.")}
 if (Component.options.functional) {console.error("[vue-loader] Example.vue: functional components are not supported with templates, they should use render functions.")}
 
@@ -34476,9 +34476,9 @@ if (false) {(function () {
   if (!hotAPI.compatible) return
   module.hot.accept()
   if (!module.hot.data) {
-    hotAPI.createRecord("data-v-8b4535d4", Component.options)
+    hotAPI.createRecord("data-v-3eb87ea2", Component.options)
   } else {
-    hotAPI.reload("data-v-8b4535d4", Component.options)
+    hotAPI.reload("data-v-3eb87ea2", Component.options)
   }
 })()}
 
@@ -34493,13 +34493,13 @@ var Component = __webpack_require__(2)(
   /* script */
   __webpack_require__(33),
   /* template */
-  __webpack_require__(42),
+  __webpack_require__(44),
   /* scopeId */
   null,
   /* cssModules */
   null
 )
-Component.options.__file = "C:\\Apache24\\htdocs\\techwebservices\\resources\\assets\\js\\components\\Search.vue"
+Component.options.__file = "/Users/dannie/code/tws/resources/assets/js/components/Search.vue"
 if (Component.esModule && Object.keys(Component.esModule).some(function (key) {return key !== "default" && key !== "__esModule"})) {console.error("named exports are not supported in *.vue files.")}
 if (Component.options.functional) {console.error("[vue-loader] Search.vue: functional components are not supported with templates, they should use render functions.")}
 
@@ -34510,9 +34510,9 @@ if (false) {(function () {
   if (!hotAPI.compatible) return
   module.hot.accept()
   if (!module.hot.data) {
-    hotAPI.createRecord("data-v-31ea8bac", Component.options)
+    hotAPI.createRecord("data-v-784010a0", Component.options)
   } else {
-    hotAPI.reload("data-v-31ea8bac", Component.options)
+    hotAPI.reload("data-v-784010a0", Component.options)
   }
 })()}
 
@@ -34524,28 +34524,27 @@ module.exports = Component.exports
 /***/ (function(module, exports, __webpack_require__) {
 
 module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
+  return _vm._m(0)
+},staticRenderFns: [function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
   return _c('div', {
-    staticClass: "w3-row center"
-  }, _vm._l((_vm.filteredList), function(post) {
-    return _c('div', {
-      staticClass: "w3-card-8 w3-col m3 w3-margin w3-animate-zoom card"
-    }, [_c('a', {
-      attrs: {
-        "href": '/post/' + post.slug,
-        "target": "_blank"
-      }
-    }, [_c('img', {
-      attrs: {
-        "src": '/storage/' + post.image
-      }
-    }), _vm._v("\n        " + _vm._s(post.title) + "\n      ")])])
-  }))
-},staticRenderFns: []}
+    staticClass: "container"
+  }, [_c('div', {
+    staticClass: "row"
+  }, [_c('div', {
+    staticClass: "col-md-8 col-md-offset-2"
+  }, [_c('div', {
+    staticClass: "panel panel-default"
+  }, [_c('div', {
+    staticClass: "panel-heading"
+  }, [_vm._v("Example Component")]), _vm._v(" "), _c('div', {
+    staticClass: "panel-body"
+  }, [_vm._v("\n                    I'm an example component!\n                ")])])])])])
+}]}
 module.exports.render._withStripped = true
 if (false) {
   module.hot.accept()
   if (module.hot.data) {
-     require("vue-hot-reload-api").rerender("data-v-31ea8bac", module.exports)
+     require("vue-hot-reload-api").rerender("data-v-3eb87ea2", module.exports)
   }
 }
 
@@ -34868,7 +34867,7 @@ module.exports.render._withStripped = true
 if (false) {
   module.hot.accept()
   if (module.hot.data) {
-     require("vue-hot-reload-api").rerender("data-v-6c925a10", module.exports)
+     require("vue-hot-reload-api").rerender("data-v-5e822a28", module.exports)
   }
 }
 
@@ -34877,27 +34876,28 @@ if (false) {
 /***/ (function(module, exports, __webpack_require__) {
 
 module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
-  return _vm._m(0)
-},staticRenderFns: [function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
   return _c('div', {
-    staticClass: "container"
-  }, [_c('div', {
-    staticClass: "row"
-  }, [_c('div', {
-    staticClass: "col-md-8 col-md-offset-2"
-  }, [_c('div', {
-    staticClass: "panel panel-default"
-  }, [_c('div', {
-    staticClass: "panel-heading"
-  }, [_vm._v("Example Component")]), _vm._v(" "), _c('div', {
-    staticClass: "panel-body"
-  }, [_vm._v("\n                    I'm an example component!\n                ")])])])])])
-}]}
+    staticClass: "w3-row center"
+  }, _vm._l((_vm.filteredList), function(post) {
+    return _c('div', {
+      staticClass: "w3-card-8 w3-col m3 w3-margin w3-animate-zoom card"
+    }, [_c('a', {
+      attrs: {
+        "href": '/post/' + post.slug,
+        "target": "_blank"
+      }
+    }, [_c('img', {
+      attrs: {
+        "src": '/storage/' + post.image
+      }
+    }), _vm._v("\n        " + _vm._s(post.title) + "\n      ")])])
+  }))
+},staticRenderFns: []}
 module.exports.render._withStripped = true
 if (false) {
   module.hot.accept()
   if (module.hot.data) {
-     require("vue-hot-reload-api").rerender("data-v-8b4535d4", module.exports)
+     require("vue-hot-reload-api").rerender("data-v-784010a0", module.exports)
   }
 }
 

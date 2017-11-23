@@ -6,6 +6,8 @@
  ✔ Make seed for start blog posts and comments, comment_spam, comment_user_vote and categories, and pages @done (17-09-10 17:13)
  ✔ Blog series funcionallity @high @today @done (17-08-13 02:20)
  ✔ Newsletter funcionallity @critical @done (17-08-12 22:19)
+ ☐ Create mail confirmation @high
+
  ☐ Send campaign programatically
  ✔ Search funcionallity @low @done (17-07-15 23:02)
  ✔ Refactor search to Vue @done (17-08-06 19:18)
@@ -14,10 +16,13 @@
  ☐ Move giffs to video upload?
  ✔ Add avatar to register form @done (17-09-10 23:03)
  ✔ Add newsletter subscription in register form @done (17-09-10 23:03)
+ ☐ Trigger newsletter subscription upon registration and confirmation mail if newsletter option chosen
+
  ☐ Put comment list first
  ☐ Disable red focus on comment form
  ☐ Fix bug not being able to log into admin when logged in on front and vice versa - add multiple authentication
  ☐ Add Algolia search
+
 
  ☐ Write Favorities blogs series @critical
  ☐ Make videos and giffs @critical
